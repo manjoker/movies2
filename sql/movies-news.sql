@@ -1,0 +1,78 @@
+-- phpMyAdmin SQL Dump
+-- version 4.2.11
+-- http://www.phpmyadmin.net
+--
+-- Client :  127.0.0.1
+-- Généré le :  Ven 29 Mai 2015 à 11:32
+-- Version du serveur :  5.6.21
+-- Version de PHP :  5.6.3
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Base de données :  `movies`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `news`
+--
+
+CREATE TABLE IF NOT EXISTS `news` (
+`news_id` int(11) NOT NULL,
+  `news_title` varchar(255) NOT NULL,
+  `news_text` text NOT NULL,
+  `news_date` datetime NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
+
+--
+-- Contenu de la table `news`
+--
+
+INSERT INTO `news` (`news_id`, `news_title`, `news_text`, `news_date`) VALUES
+(1, 'In sagittis tortor vel enim', 'Consectetur adipiscing elit, curabitur et mi pretium. Commodo mauris sed, efficitur justo. Nullam interdum eget nulla sed blandit. Aenean eu tortor mollis, placerat erat sed, gravida nunc. \r\n\r\nCras eleifend, est eget molestie imperdiet, lacus lorem porta ante, eget mollis diam mi nec orci. Vestibulum arcu velit, egestas vulputate diam quis, efficitur pellentesque mauris. Phasellus ornare nulla sit amet convallis lacinia. Morbi sollicitudin aliquet posuere. Morbi consequat convallis ipsum eget vulputate. Sed non diam at nisl porta accumsan a quis quam. Aliquam in odio vel enim lacinia malesuada nec quis turpis.\r\n\r\nCurabitur quam dolor, lobortis quis accumsan eget, mattis eget felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus ornare turpis, eget malesuada ligula.', '2015-05-10 08:11:57'),
+(2, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', 'Ut sodales arcu eu ligula laoreet, ac molestie nulla euismod, consectetur adipiscing elit. Curabitur et mi pretium, commodo mauris sed, efficitur justo. Nullam interdum eget nulla sed blandit. Aenean eu tortor mollis, placerat erat sed, gravida nunc. \r\n\r\nCras eleifend, est eget molestie imperdiet, lacus lorem porta ante, eget mollis diam mi nec orci. Vestibulum arcu velit, egestas vulputate diam quis, efficitur pellentesque mauris. Phasellus ornare nulla sit amet convallis lacinia. Morbi sollicitudin aliquet posuere. Morbi consequat convallis ipsum eget vulputate. Sed non diam at nisl porta accumsan a quis quam. Aliquam in odio vel enim lacinia malesuada nec quis turpis.\r\n\r\nCurabitur quam dolor, lobortis quis accumsan eget, mattis eget felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus ornare turpis, eget malesuada ligula.', '2015-04-12 10:46:28'),
+(3, 'Maecenas vestibulum leo vel faucibus vehicula', 'Integer a neque nec est viverra placerat, consectetur adipiscing elit. Curabitur et mi pretium, commodo mauris sed, efficitur justo. Nullam interdum eget nulla sed blandit. Aenean eu tortor mollis, placerat erat sed, gravida nunc.\r\n\r\n Cras eleifend, est eget molestie imperdiet, lacus lorem porta ante, eget mollis diam mi nec orci. Vestibulum arcu velit, egestas vulputate diam quis, efficitur pellentesque mauris. Phasellus ornare nulla sit amet convallis lacinia. Morbi sollicitudin aliquet posuere. Morbi consequat convallis ipsum eget vulputate. Sed non diam at nisl porta accumsan a quis quam. Aliquam in odio vel enim lacinia malesuada nec quis turpis. Curabitur quam dolor, lobortis quis accumsan eget, mattis eget felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\n Phasellus dapibus ornare turpis, eget malesuada ligula.', '2015-03-07 14:23:15'),
+(4, 'Donec consectetur libero eu nibh eleifend ultrices', 'Nullam nec mauris lacinia, porta lorem sed, tempor nibh, consectetur adipiscing elit. Curabitur et mi pretium, commodo mauris sed, efficitur justo. Nullam interdum eget nulla sed blandit. Aenean eu tortor mollis, placerat erat sed, gravida nunc.\r\n\r\n Cras eleifend, est eget molestie imperdiet, lacus lorem porta ante, eget mollis diam mi nec orci. Vestibulum arcu velit, egestas vulputate diam quis, efficitur pellentesque mauris. Phasellus ornare nulla sit amet convallis lacinia. Morbi sollicitudin aliquet posuere. Morbi consequat convallis ipsum eget vulputate. Sed non diam at nisl porta accumsan a quis quam. Aliquam in odio vel enim lacinia malesuada nec quis turpis. Curabitur quam dolor, lobortis quis accumsan eget, mattis eget felis.\r\n\r\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus ornare turpis, eget malesuada ligula.', '2015-02-03 11:47:23'),
+(5, 'Curabitur gravida ex eget consectetur feugiat', 'Fusce ac risus eleifend, blandit orci id, ornare odio, consectetur adipiscing elit. Curabitur et mi pretium, commodo mauris sed, efficitur justo. Nullam interdum eget nulla sed blandit. Aenean eu tortor mollis, placerat erat sed, gravida nunc.\r\n\r\n Cras eleifend, est eget molestie imperdiet, lacus lorem porta ante, eget mollis diam mi nec orci. Vestibulum arcu velit, egestas vulputate diam quis, efficitur pellentesque mauris. Phasellus ornare nulla sit amet convallis lacinia. Morbi sollicitudin aliquet posuere. Morbi consequat convallis ipsum eget vulputate. Sed non diam at nisl porta accumsan a quis quam. Aliquam in odio vel enim lacinia malesuada nec quis turpis. Curabitur quam dolor, lobortis quis accumsan eget, mattis eget felis.\r\n\r\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus ornare turpis, eget malesuada ligula.', '2015-01-18 08:32:17'),
+(6, 'Quisque in tellus in neque varius facilisis ac quis purus', 'Ut aliquet turpis et leo egestas, in ultrices metus elementum, consectetur adipiscing elit. Curabitur et mi pretium, commodo mauris sed, efficitur justo. Nullam interdum eget nulla sed blandit. Aenean eu tortor mollis, placerat erat sed, gravida nunc. Cras eleifend, est eget molestie imperdiet, lacus lorem porta ante, eget mollis diam mi nec orci. Vestibulum arcu velit, egestas vulputate diam quis, efficitur pellentesque mauris. Phasellus ornare nulla sit amet convallis lacinia. Morbi sollicitudin aliquet posuere. Morbi consequat convallis ipsum eget vulputate. Sed non diam at nisl porta accumsan a quis quam. Aliquam in odio vel enim lacinia malesuada nec quis turpis. Curabitur quam dolor, lobortis quis accumsan eget, mattis eget felis.\r\n\r\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus ornare turpis, eget malesuada ligula.', '2014-12-02 15:22:47'),
+(7, 'Aenean eu lacus ut urna sodales porttitor sit amet ullamcorper risus', 'Fusce quis felis scelerisque, iaculis est vitae, malesuada elit, consectetur adipiscing elit. Curabitur et mi pretium, commodo mauris sed, efficitur justo. Nullam interdum eget nulla sed blandit. Aenean eu tortor mollis, placerat erat sed, gravida nunc. Cras eleifend, est eget molestie imperdiet, lacus lorem porta ante, eget mollis diam mi nec orci. Vestibulum arcu velit, egestas vulputate diam quis, efficitur pellentesque mauris. Phasellus ornare nulla sit amet convallis lacinia. Morbi sollicitudin aliquet posuere. Morbi consequat convallis ipsum eget vulputate. Sed non diam at nisl porta accumsan a quis quam. Aliquam in odio vel enim lacinia malesuada nec quis turpis. Curabitur quam dolor, lobortis quis accumsan eget, mattis eget felis.\r\n\r\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus ornare turpis, eget malesuada ligula.', '2014-11-25 14:13:55'),
+(8, 'Donec in tellus ut diam mattis maximus', 'Morbi lobortis leo et mi viverra, in dignissim est accumsan, consectetur adipiscing elit. Curabitur et mi pretium, commodo mauris sed, efficitur justo. Nullam interdum eget nulla sed blandit. Aenean eu tortor mollis, placerat erat sed, gravida nunc. Cras eleifend, est eget molestie imperdiet, lacus lorem porta ante, eget mollis diam mi nec orci. Vestibulum arcu velit, egestas vulputate diam quis, efficitur pellentesque mauris. Phasellus ornare nulla sit amet convallis lacinia. Morbi sollicitudin aliquet posuere. Morbi consequat convallis ipsum eget vulputate. Sed non diam at nisl porta accumsan a quis quam. Aliquam in odio vel enim lacinia malesuada nec quis turpis. Curabitur quam dolor, lobortis quis accumsan eget, mattis eget felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus ornare turpis, eget malesuada ligula.', '2014-10-11 12:20:10'),
+(9, 'Nullam pharetra turpis mollis felis venenatis tincidunt', 'Cras non sem ut sapien bibendum volutpat a non est, consectetur adipiscing elit. Curabitur et mi pretium, commodo mauris sed, efficitur justo. Nullam interdum eget nulla sed blandit. Aenean eu tortor mollis, placerat erat sed, gravida nunc. \r\n\r\nCras eleifend, est eget molestie imperdiet, lacus lorem porta ante, eget mollis diam mi nec orci. Vestibulum arcu velit, egestas vulputate diam quis, efficitur pellentesque mauris. Phasellus ornare nulla sit amet convallis lacinia. Morbi sollicitudin aliquet posuere. Morbi consequat convallis ipsum eget vulputate. Sed non diam at nisl porta accumsan a quis quam. Aliquam in odio vel enim lacinia malesuada nec quis turpis.\r\n\r\nCurabitur quam dolor, lobortis quis accumsan eget, mattis eget felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus ornare turpis, eget malesuada ligula.', '2014-09-22 09:46:28'),
+(10, 'Suspendisse non nibh vitae nunc facilisis vestibulum sit amet id diam', 'Nulla pellentesque nunc eu purus dignissim dignissim, consectetur adipiscing elit. Curabitur et mi pretium, commodo mauris sed, efficitur justo. Nullam interdum eget nulla sed blandit. Aenean eu tortor mollis, placerat erat sed, gravida nunc.\r\n\r\n Cras eleifend, est eget molestie imperdiet, lacus lorem porta ante, eget mollis diam mi nec orci. Vestibulum arcu velit, egestas vulputate diam quis, efficitur pellentesque mauris. Phasellus ornare nulla sit amet convallis lacinia. Morbi sollicitudin aliquet posuere. Morbi consequat convallis ipsum eget vulputate. Sed non diam at nisl porta accumsan a quis quam. Aliquam in odio vel enim lacinia malesuada nec quis turpis. Curabitur quam dolor, lobortis quis accumsan eget, mattis eget felis.\r\n\r\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus ornare turpis, eget malesuada ligula.', '2014-08-29 17:36:12'),
+(11, 'Duis vestibulum elit at neque sagittis dictum', 'Sed sit amet metus vel neque porttitor dignissim, consectetur adipiscing elit. Curabitur et mi pretium, commodo mauris sed, efficitur justo. Nullam interdum eget nulla sed blandit. Aenean eu tortor mollis, placerat erat sed, gravida nunc.\r\n\r\n Cras eleifend, est eget molestie imperdiet, lacus lorem porta ante, eget mollis diam mi nec orci. Vestibulum arcu velit, egestas vulputate diam quis, efficitur pellentesque mauris. Phasellus ornare nulla sit amet convallis lacinia. Morbi sollicitudin aliquet posuere. Morbi consequat convallis ipsum eget vulputate. Sed non diam at nisl porta accumsan a quis quam. Aliquam in odio vel enim lacinia malesuada nec quis turpis. Curabitur quam dolor, lobortis quis accumsan eget, mattis eget felis.\r\n\r\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus ornare turpis, eget malesuada ligula.', '2014-07-05 16:24:08'),
+(12, 'Pellentesque non metus eget enim molestie mattis', 'In sagittis tortor vel enim viverra auctor, consectetur adipiscing elit. Curabitur et mi pretium, commodo mauris sed, efficitur justo. Nullam interdum eget nulla sed blandit. Aenean eu tortor mollis, placerat erat sed, gravida nunc.\r\n\r\n Cras eleifend, est eget molestie imperdiet, lacus lorem porta ante, eget mollis diam mi nec orci. Vestibulum arcu velit, egestas vulputate diam quis, efficitur pellentesque mauris. Phasellus ornare nulla sit amet convallis lacinia. Morbi sollicitudin aliquet posuere. Morbi consequat convallis ipsum eget vulputate. Sed non diam at nisl porta accumsan a quis quam. Aliquam in odio vel enim lacinia malesuada nec quis turpis. Curabitur quam dolor, lobortis quis accumsan eget, mattis eget felis.\r\n\r\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus ornare turpis, eget malesuada ligula.', '2014-06-24 22:56:12'),
+(13, 'Etiam elementum ipsum sagittis felis mattis accumsan', 'Suspendisse pulvinar eros id dictum pharetra, consectetur adipiscing elit. Curabitur et mi pretium, commodo mauris sed, efficitur justo. Nullam interdum eget nulla sed blandit. Aenean eu tortor mollis, placerat erat sed, gravida nunc.\r\n\r\n Cras eleifend, est eget molestie imperdiet, lacus lorem porta ante, eget mollis diam mi nec orci. Vestibulum arcu velit, egestas vulputate diam quis, efficitur pellentesque mauris. Phasellus ornare nulla sit amet convallis lacinia. Morbi sollicitudin aliquet posuere. Morbi consequat convallis ipsum eget vulputate. Sed non diam at nisl porta accumsan a quis quam. Aliquam in odio vel enim lacinia malesuada nec quis turpis. Curabitur quam dolor, lobortis quis accumsan eget, mattis eget felis.\r\n\r\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus ornare turpis, eget malesuada ligula.', '2014-05-30 13:36:05'),
+(14, 'Pellentesque vel lacus efficitur, egestas leo id, mattis diam', 'Maecenas ut neque quis felis consectetur ornare, consectetur adipiscing elit. Curabitur et mi pretium, commodo mauris sed, efficitur justo. Nullam interdum eget nulla sed blandit. Aenean eu tortor mollis, placerat erat sed, gravida nunc.\r\n\r\n Cras eleifend, est eget molestie imperdiet, lacus lorem porta ante, eget mollis diam mi nec orci. Vestibulum arcu velit, egestas vulputate diam quis, efficitur pellentesque mauris. Phasellus ornare nulla sit amet convallis lacinia. Morbi sollicitudin aliquet posuere. Morbi consequat convallis ipsum eget vulputate. Sed non diam at nisl porta accumsan a quis quam. Aliquam in odio vel enim lacinia malesuada nec quis turpis. Curabitur quam dolor, lobortis quis accumsan eget, mattis eget felis.\r\n\r\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus ornare turpis, eget malesuada ligula.', '2014-04-03 07:25:18'),
+(15, 'Donec lacinia ex eu lorem imperdiet dapibus', 'In semper nisi a scelerisque sodales, consectetur adipiscing elit. Curabitur et mi pretium, commodo mauris sed, efficitur justo. Nullam interdum eget nulla sed blandit. Aenean eu tortor mollis, placerat erat sed, gravida nunc. Cras eleifend, est eget molestie imperdiet, lacus lorem porta ante, eget mollis diam mi nec orci.\r\n\r\n Vestibulum arcu velit, egestas vulputate diam quis, efficitur pellentesque mauris. Phasellus ornare nulla sit amet convallis lacinia. Morbi sollicitudin aliquet posuere. Morbi consequat convallis ipsum eget vulputate. Sed non diam at nisl porta accumsan a quis quam. Aliquam in odio vel enim lacinia malesuada nec quis turpis. Curabitur quam dolor, lobortis quis accumsan eget, mattis eget felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\n Phasellus dapibus ornare turpis, eget malesuada ligula.', '2014-02-01 12:44:27');
+
+--
+-- Index pour les tables exportées
+--
+
+--
+-- Index pour la table `news`
+--
+ALTER TABLE `news`
+ ADD PRIMARY KEY (`news_id`);
+
+--
+-- AUTO_INCREMENT pour les tables exportées
+--
+
+--
+-- AUTO_INCREMENT pour la table `news`
+--
+ALTER TABLE `news`
+MODIFY `news_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=16;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
